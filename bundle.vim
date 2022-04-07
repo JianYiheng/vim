@@ -327,7 +327,7 @@ if has_key(s:enabled, 'vim-doge')
 endif
 
 if has_key(s:enabled, 'nerdtree')
-	Plug 'scrooloose/nerdtree', {'on': ['NERDTree', 'NERDTreeFocus', 'NERDTreeToggle', 'NERDTreeCWD', 'NERDTreeFind'] }
+	Plug 'preservim/nerdtree'
 	Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 	IncScript site/bundle/nerdtree.vim
 endif
@@ -468,6 +468,20 @@ endif
 
 if has_key(s:enabled, 'anyjump')
 	Plug 'pechorin/any-jump.vim'
+endif
+
+if has_key(s:enabled, 'align')
+	Plug 'junegunn/vim-easy-align'
+
+	" Start interactive EasyAlign in visual mode (e.g. vipga)
+	xmap ga <Plug>(EasyAlign)
+
+	" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+	nmap ga <Plug>(EasyAlign)
+endif
+
+if has_key(s:enabled, 'autopair')
+	Plug 'jiangmiao/auto-pairs'
 endif
 
 
