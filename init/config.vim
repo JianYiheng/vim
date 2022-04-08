@@ -330,5 +330,5 @@ if get(g:, 'asc_skip_meta_fn_setup', 0) == 0
 	call Terminal_FnInit(1)
 endif
 
-
+set nu
 
